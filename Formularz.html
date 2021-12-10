@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formularz</title>
+<style>
+
+
+    body {
+  font-family: 'Palatino Linotype', serif;
+  max-width: 600px;
+  padding: 0px 30px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-top: 0px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+legend {
+  padding: 0px 3px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+label {
+  width: 110px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+}
+
+em {
+  font-weight: bold;
+  font-style: normal;
+  color: #f00;
+}
+
+input:focus {
+  background: #eaeaea;
+}
+
+input, textarea {
+  width: 249px;
+}
+
+textarea {
+  height: 100px;
+}
+
+select {
+  width: 254px;
+}
+
+input[type=checkbox] {
+  width: 10px;
+}
+
+input[type=submit] {
+  width: 170px;
+  padding: 10px;
+}
+</style>
+
+
+</head>
+<body>
+    
+    <form action="#">
+         <p>Formularz podani o prace w Zoo</p>
+        <p><i>Prosimy wypelnienie formularza. Wymagane pola oznaczone sa </i><em>*</em></p> <input type="reset" value="Reset">
+        <fieldset>
+          <legend>Informacje kontaktowe</legend>
+            <label for="name">Imie  <em>*</em></label>
+            <input id="name"><br>
+            <label for="name">Nazwisko<em>*</em></label>
+            <input id="name"><br>
+            <label for="password">Wygadane haslo(od 8 znakow)</label>
+            <input id="password"  type="password"><br>
+            <label for="email"> Twoj Email <em>*</em></label>
+            <input id="email"><br>
+        </fieldset>
+        <fieldset>
+          <legend>Informacje osobiste </legend>
+            <label for="age">Wiek<em>*</em></label>
+            <input id="age"><br>
+            <label for="gender">Plec</label>
+            <select id="gender">
+              <option value="female">Kobieta</option>
+              <option value="male">Mezczyzna</option>
+            </select><br>
+            <label for="comments">Wymien cechy osobiste</label>
+            <textarea id="comments"></textarea>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Wybierzswoje ulubione zwierzeta</legend>
+          <label for="zebra"><input id="zebra" type="checkbox"> Zebra</label>
+          <label for="antylopa"><input id="antylopa" type="checkbox"> Antylopa</label>
+          <label for="czlowiek"><input id="czlowiek" type="checkbox"> Czlowiek</label>
+          <label for="anaconda"><input id="anaconda" type="checkbox"> Anakonda</label>
+          <label for="slon"><input id="slon" type="checkbox"> Slon</label>
+          <label for="golab"><input id="golab" type="checkbox"> Golab</label>
+          <label for="kangur"><input id="kangur" type="checkbox"> Kangur</label>
+          <label for="lemur"><input id="lemur" type="checkbox"> Lemur</label>
+          <label for="pingwin"><input id="pingwin" type="checkbox"> Pingwin</label>
+          <label for="krab"><input id="krab" type="checkbox"> Krab</label>
+          <label for="tygrys"><input id="tygrys" type="checkbox"> Tygrys</label>
+          <label for="human"><input id="malpa" type="checkbox"> Malpa</label>
+          <label for="elephant"><input id="zajac" type="checkbox"> Zajac</label>
+          <label for="wildebeest"><input id="wilk" type="checkbox"> Wilk</label>
+          <label for="pigeon"><input id="lis" type="checkbox"> Lis</label>
+          <label for="crab"><input id="niedzwiedz" type="checkbox"> Niedzwiedz</label>
+        </fieldset>
+        <p><input type="submit" value="Wyslij informacje"></p>
+      </form>
+
+
+
+
+
+</body>
+</html>
